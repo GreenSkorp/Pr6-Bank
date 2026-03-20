@@ -31,9 +31,9 @@ namespace BankAccountNS
         }
 
         /// <summary>
-        /// Метод, который позволяет положить денежные средства на счёт
+        /// Метод, который позволяет снять денежные средства со счёта
         /// </summary>
-        /// <param name="amount">То количество денег, которое мы хотим положить на счёт</param>
+        /// <param name="amount">То количество денег, которое мы можем снять со счёта</param>
         /// <exception cref="ArgumentOutOfRangeException">Ошибка, которая появляется, если параметр не подходит под условия</exception>
         public void Debit(double amount)
         {
@@ -51,10 +51,11 @@ namespace BankAccountNS
         }
 
         /// <summary>
-        /// Метод, который позволяет снять денежные средства со счёта
+        /// Метод, который позволяет положить денежные средства на счёт
         /// </summary>
-        /// <param name="amount">То количество денег, которое мы можем снять со счёта</param>
+        /// <param name="amount">То количество денег, которое мы хотим положить на счёт</param>
         /// <exception cref="ArgumentOutOfRangeException">Ошибка, которая появляется, если параметр не подходит под условия</exception>
+        
         public void Credit(double amount)
         {
             if (amount < 0)
